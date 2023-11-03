@@ -1,0 +1,1299 @@
+
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://use.typekit.net/kim3yej.css">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+        <!-- Core styles for GLide -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+        <!-- Extra styles for GLide -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+
+        <!-- Futura PT font  -->
+        <link rel="stylesheet" href="https://use.typekit.net/eym1ggi.css">
+
+
+<!-- LOCAL This script is importing the global styles -->
+<!-- <link rel="stylesheet" href="/style_16_02-23.css"> -->
+<!-- End of global style scripts -->
+
+<!-- GIT This script is importing the global styles -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Plaster-Creative-Communications/maverick-intouch@main/style_16_02-23.css">
+<!-- End of global style scripts  -->
+
+<!-- Swiper styles for carousel -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- Swiper script for carousel -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</head>
+<body>
+        
+<style>
+    :root {
+        --light-blue: #00afce;
+        --white: #ffffff;
+        --green: rgb(0, 87, 88);
+        --lightgrey: #f6f6f6;
+        --darkgrey: #8d8d8d;
+        --yellow: #CCD814;
+        --light-green: #aad6d6;
+
+
+        --grey: #BEBEBE;
+        --light-grey: #D5D5D5;
+        --lighter-grey: #EBEBEB;
+        --lightest-grey:#F5F5F5;
+        --white: #FFFFFF;
+        --orange: #FF3900;
+        --blue:#00213C;
+        --black-1: #000000;
+        --black-2: #00010F;
+    }
+
+    * {
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    .z-index1 {
+        z-index: 1;
+    }
+
+
+    body {
+        background-color: #ffffff !important;
+    }
+* {
+    box-sizing: border-box!important;
+}
+    section {
+        width: 100%;
+    }
+
+    p,
+    ul li,
+    ol li {
+        font-size: 16px !important;
+        margin:0;
+        padding: 0;
+        color: var(--blue)!important;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        color: var(--blue)!important;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .bg-lighter-grey {
+        background-color: var(--lighter-grey)!important;
+    }
+    .bg-grey {
+        background-color: var(--grey)!important;
+    }
+    .bg-blue {
+        background-color: var(--blue)!important;
+    }
+    .bg-blue .poly-title {
+        color: var(--white)!important;
+    }
+    .bg-blue p {
+        color: var(--white)!important;
+    }
+    .poly-text-white {
+        color: var(--white)!important;
+    }
+    .poly-text-orange {
+        color: var(--orange)!important;
+    }
+    .poly-main-container {
+            max-width: 100%!important;
+            padding-bottom: 0!important;
+    }
+
+    .poly-max-width-container {
+        max-width:1400px !important;
+        width: 100%;
+        margin-inline: auto;
+        
+    }
+
+    .poly-flex-row {
+        display: flex!important;
+        flex-direction: row!important;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .poly-relative {
+        position: relative;
+    }
+    .poly-priority {
+        z-index: 5;
+    }
+
+    .padding-left {
+        padding-left: 65px;
+    }
+    .poly-overlay {
+        background-color: var(--blue);
+        opacity: 0.7;
+        position:absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%; 
+        z-index: 1;
+        }
+
+        .poly-text-center {
+            text-align: center;
+            margin-inline: auto;
+        }
+        h1.poly-title {
+            font-size: 42px!important;
+            font-weight: 600!important;
+            line-height: 1.2!important;
+            position: relative;
+            z-index: 3;
+        }
+        h2.poly-title {
+            font-size:36px!important;
+            font-weight: 600!important;
+            line-height: 1.2!important;
+            margin-block: 50px!important;
+            position: relative;
+            z-index: 3;
+        }
+        h3.poly-title {
+            font-size:36px!important;
+            font-weight: 600!important;
+            line-height: 1.2!important;
+            margin-block: 50px!important;
+            position: relative;
+            z-index: 3;
+        }
+        h4.poly-title {
+            font-size:36px!important;
+            font-weight: 600!important;
+            line-height: 1.2!important;
+            margin-block: 50px!important;
+            position: relative;
+            z-index: 3;
+        }
+        .poly-title-section .poly-p {
+            max-width: 700px;
+        }
+        .poly-p {
+            font-size: 20px!important;
+            max-width: 900px;
+            padding-left:50px;
+        }
+ 
+        .poly-section {
+            padding: 50px 25px;
+            padding-bottom: 100px;
+            position: relative;  
+            overflow: clip;
+          }
+        .poly-section .poly-title { 
+            font-size: 36px!important;
+            font-weight: 700!important;
+            text-transform: uppercase;
+        
+        }
+
+        .poly-orange-border-left {
+            border-left: 3px var(--orange) solid;
+            padding-left: 50px;
+        }
+        .poly-orange-border-right {
+            border-right: 3px var(--orange) solid;
+        }
+
+        .poly__col-2 {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 30px;   
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            z-index: 3;
+        }
+        .poly-product__col {
+            width: 100%;
+            height: 100%;;
+            display: flex;
+            flex-direction: column;
+        }
+        .poly-product__col-margin-top {
+            margin-top: 50px;
+        }
+
+        .poly-product__col .poly-product__images {
+                margin-bottom: 80px;
+        }
+     /*     HEADER     */
+
+    .poly-header {
+        width: 100%;
+        padding: 25px 15px;
+    }
+    .poly-header__logos {
+      display: flex;
+    }
+    .poly-header__logos .poly-header__logo {
+        /* width: 150px; */
+        margin-right: 30px;
+        border:none;
+        height:40px;
+    }
+    .poly-header__logos .poly-header__logo img {
+        height:100%;
+    }
+    .poly-header__logos .poly-header__logo:last-of-type {
+        padding-left: 30px;
+        border-left: 1px var(--white) solid;
+    }
+    .poly-header_nav {
+        margin-left: auto;
+    }
+    .poly-header_nav ul {
+        display: flex;
+        height: fit-content;
+        margin-bottom: 0!important;
+    }
+
+    .poly-header_nav ul li {
+        list-style-type: none;
+        border-right: 1px var(--orange) solid;
+    }
+    
+
+    .poly-header_nav ul li a {
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding-inline: 15px;
+        text-decoration: none;
+    }
+
+      /*     HERO     */
+
+      .poly-hero {
+            height: 800px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-inline: 25px;
+            background-image: url('https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+      .poly-hero .poly-title {
+        width: 100%;
+        padding-inline: 50px!important;
+      }
+
+    /*     Section     */
+
+      .poly-title-section-family {
+            min-height: 800px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-inline: 25px;
+            background-image: url('https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-family.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+      }
+
+    /*     Products     */
+    .poly-section.poly-products {
+        display: flex;
+        flex-direction: column;
+        padding-block: 120px!important;
+    }
+    .poly-products__product {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .poly-products__product:last-of-type {
+        margin-bottom: 0;
+    }
+    .poly-product__info {
+        width: 100%;
+    }
+    .poly-product__info .poly-title {
+        margin-block: 15px!important;
+    }
+    .poly-product__subheading {
+        font-size:22px!important;
+        font-weight: 700!important;
+    }
+    .poly-product__info-list {
+            margin-top: 10px;
+    }
+    .poly-product__info-list li {
+            color: var(--orange)!important;
+            padding-block:5px;
+    }
+    .poly-product__info-list li p {
+            color: var(--blue)!important;
+            font-size: 18px!important;
+            font-weight: 400!important;;
+    }
+    .poly-product__info-download {
+        background: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       margin-top:50px;
+       margin-left: 50px;
+       text-decoration: none;
+       padding: 0;
+       width: fit-content;
+       position: relative;
+       z-index: 2;
+   }
+   .poly-product__info-download:hover .poly-download-svg {
+        fill: var(--orange);
+
+   }
+    .poly-product__info-download .poly-p {
+        font-size: 18px!important;
+        font-weight: 600!important;
+        text-transform: uppercase;
+        margin-top: 0;
+        padding-left: 20px;
+    }
+
+    .poly-download-icon {
+       width:50px;
+       height:50px;
+       border-radius: 50%;
+       background-color: var(--white);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: relative;
+
+    }
+    .poly-download-icon svg {
+        width: 50%;
+    }
+    .poly-download-svg {
+        fill: var(--grey);
+        transition: 0.2s;
+    }
+
+    .poly-product__images {
+        width:100%;
+    }
+    .poly-product__image  {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 100%;
+    }
+    .poly-product__image img {
+        max-width: 50%!important;
+        margin-inline: auto;
+    }
+    .poly-carousel {
+        position: relative;
+        max-width:700px;
+        width: 100%;
+        max-height: 550px;
+    }
+    .poly-carousel .swiper-wrapper {
+        max-height: 550px!important;
+    }
+    .poly-carousel .swiper-slide {
+        cursor: grab;
+    }
+    .poly-carousel .swiper-slide:active {
+        cursor: grabbing;
+    }
+    .poly-carousel__scrollbar {
+        height: 3px;
+        background-color: var(--white);
+        margin-top: 25px;
+        cursor: pointer;
+    }
+    .swiper-scrollbar-drag {
+        background-color: var(--orange);
+        cursor: grab;
+    }
+    .swiper-scrollbar-drag:active {
+        cursor: grabbing;
+    }
+
+    .poly-ol-col {
+        align-items: flex-start;
+    }
+    /* ol {
+        list-style-type:decimal!important;
+        list-style-position: inside;
+    }
+    ol li {
+        display:list-item;
+        list-style-type:decimal!important;
+        padding-block: 15px;
+        list-style-position: inside;
+    } */
+
+    .poly-ordered-list {
+            margin-top: 10px;
+            padding-left: 70px;
+    }
+    .poly-ordered-list li {
+            color: var(--orange)!important;
+            padding-block: 15px;
+            font-size: 18px!important;
+            font-weight: 400!important;;
+    }
+    .poly-ordered-list li p {
+      
+            font-size: 18px!important;
+            font-weight: 400!important;;
+            padding:0;
+    }
+    
+    .poly-section__logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        margin-top: 25px;
+
+    }
+
+    .poly-section__logos .poly-section_logo {
+        height: 70px;
+        margin-right: 15px;
+        padding-left: 30px;
+    }
+    .poly-section__logos .poly-section_logo img {
+        width: unset;
+        height: 100%;
+    }
+
+    .poly-p.margin-top {
+        margin-top:15px;
+    }
+    .poly-footer__socials {
+        display: flex;
+        width: fit-content;
+        margin-inline: auto;
+    }
+
+    .poly-footer__social-link {
+        width: 65px;
+        height: 65px;
+      
+        border-radius: 50%;
+        margin-inline: 25px;
+    }
+    .poly-footer__social-link  img {
+        width: 100%;
+    }
+    .poly-footer  {
+        padding-block: 50px;
+    }
+    .poly-footer__links {
+        display: flex;
+        width: fit-content;
+        margin-inline: auto;
+        margin-top: 50px;
+    }
+    .poly-footer__links a {
+       text-decoration: none;
+       color: var(--white)!important;
+    }
+    .poly-footer__links a:hover{
+       text-decoration: underline;
+    }
+    .poly-footer__links a p {
+       color: var(--white)!important;
+       font-size: 16px!important;
+    }
+
+    .poly-smaller-p {
+        font-size: 20px!important;
+    }
+    .poly-plaster-links:hover{
+        text-decoration: none!important;
+    }
+    .poly-plaster-link:hover{
+        text-decoration: none!important;
+    }
+
+    .poly-plaster-link:hover span{
+        text-decoration: underline;
+    }
+
+    .poly-footer-bottom {
+        background: rgb(162,215,65);
+        background: linear-gradient(90deg, rgba(162,215,65,1) 0%, rgba(201,182,212,1) 50%, rgba(113,82,238,1) 100%);
+        height: 50px;
+        width: 100%;
+    }
+     
+     .poly-background-circle  {
+        background-image: url('https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-orange-circle.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        z-index:0;
+     }
+     .poly-background-circle.top {
+        top: -100px;
+        left: -100px;
+     }
+
+     .poly-background-circle.middle {
+        top: 50%;
+        right: -100px;
+        transform: translateY(-50%);
+     }
+     .poly-background-circle.bottom {
+        bottom: -150px;
+        left: -100px;
+     }
+     .poly-background-circle.top-right {
+        top: -150px;
+        right: -200px;
+        width: 600px;
+        height: 600px;
+     }
+
+     .poly-modal {
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,33,69,0.9);
+        z-index: 999;
+        display: none;
+        align-items: center;
+        justify-content: center ;
+     }
+     .poly-modal.show {
+        display: flex;
+     }
+     .poly-modal__image-wrapper {
+        width: fit-content;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+     }
+     .poly-modal-close {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        outline:none;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateY(-60%);
+     }
+     .poly-exit-cross {
+                          fill: none;
+                          stroke: #ff3900;
+                          stroke-linecap: round;
+                          stroke-width: 2px;
+                        }
+    .poly-enlarge {
+        background-color: #ff3900;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        outline: none;
+    }
+    .poly-enlarge  .poly-exit-cross {
+                          fill: none;
+                          stroke: var(--white);
+                          stroke-linecap: round;
+                          stroke-width: 2px;
+                          transform: rotate(180deg);
+                        }
+</style>
+
+
+<script>
+
+    const toggleVideoModal = () => {
+        document.querySelector('#poly-image-modal').classList.toggle('show');
+    }
+
+</script>
+
+    <main class="poly-main-container main-container">
+
+        <!-- <div class="poly-modal show" id="poly-image-modal">
+            <button class="poly-modal-close" onclick="toggleVideoModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16.527" height="16.527" viewBox="0 0 16.527 16.527">
+                    <g id="Group_130" data-name="Group 130" transform="translate(-5238.675 -6209.08)">
+                      <path id="Path_93" data-name="Path 93" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9"/>
+                      <path id="Path_94" data-name="Path 94" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9" transform="translate(11464.282 970.405) rotate(90)"/>
+                    </g>
+                  </svg>
+            </button>
+            <div class="poly-modal__image-wrapper">
+                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-x30_1.png" alt="Image enlarged">
+            </div> 
+        </div> -->
+
+        <div class="poly-header bg-blue">
+            <div class="poly-max-width-container poly-flex-row">
+                <div class="poly-header__logos">
+                    <div class="poly-header__logo"><img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-mav-logo.png" alt="TD Synnex Maverick logo"></div>
+                    <div class="poly-header__logo"><img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-logo.png" alt="Poly logo"></div>
+                </div>
+            <nav class='poly-header_nav'>
+                <ul>
+                    <li><a href="#hybrid">Hybrid</a></li>
+                    <li><a href="#family">Family</a></li>
+                    <li><a href="#bettertogether">Bettertogether</a></li>
+                    <li><a href="#licensing">Licensing</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+
+        <div class="poly-hero">
+            <div class="poly-overlay"></div>
+            <div class="poly-max-width-container poly-flex-row poly-relative poly-priority">
+                <div class="poly-hero__content poly-priority poly-text-center">
+                    <h1 class="poly-title poly-text-white poly-orange-border-left poly-orange-border-right">Poly and TD SYNNEX Maverick join forces to bring the ultimate collaboration portfolio to market.</h1>
+                </div>
+            </div>
+        </div>
+
+        <section class="poly-section poly-title-hybrid bg-blue" id="hybrid">
+            <div class="poly__col-2 poly-max-width-container"> 
+                <h2 class="poly-title poly-orange-border-left">The poly portfolio for<br/><span class="poly-text-orange">hybrid work</h2>
+                <div class="poly-title__p">
+                    <p class="poly-p">Hybrid working policies give employees the freedom to work in or out of the office; splitting time between multiple work locations could be a hassle — unless your workforce is powered by a killer set of tools and technologies.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="poly-section poly-title-section-family poly-title-section" id="family">
+            <div class="poly-overlay"></div>
+            <div class="poly-title-section__content poly-relative poly-priority poly-max-width-container">
+                <h2 class="poly-title poly-orange-border-left poly-text-white">Poly studio <br/><span class="poly-text-orange">family</h2>
+                <p class="poly-p poly-text-white">The Poly Studio X family offers legendary audio and video performance in simple all-in-one video bars. The Poly Studio X family of radically simple video bars delivers stress-free video conferencing and boardroom-quality audio and video performance—all in a small and sleek package.</p>
+            </div>
+        </section>
+
+        <section class="poly-section poly-products bg-lighter-grey">
+            <div class="poly-background-circle top"></div>
+            <div class="poly-background-circle middle"></div>
+            <div class="poly-background-circle bottom"></div>
+            <div class="poly-products__product poly-max-width-container">
+                <div class="poly__col-2">
+                    <div class="poly-product__info">
+                        <h4 class="poly-title poly-orange-border-left">Poly Studio <span class="poly-text-orange">X30</span></h4>
+                        <p class="poly-product__subheading poly-p">All-in-one video bar for small rooms</p>
+                        <ul class="poly-product__info-list padding-left">
+                            <li><p>Keep it simple — no computer needed</p></li>
+                            <li><p>Compact design makes it easy to set up</p></li>
+                            <li><p>Share content easily, wired or wirelesswire</p></li> 
+                        </ul>
+                        <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/eu_website/poly-studio-x30-ds-en.pdf" target="__blank" class="poly-product__info-download">
+                            <div class="poly-download-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                          
+                                    <g id="icon" transform="translate(-28 -28)">
+                                      <path id="Path_39" data-name="Path 39" class="poly-download-svg" d="M49.591,65.523H31.409A3.409,3.409,0,0,1,28,62.114V58.136a1.136,1.136,0,0,1,2.273,0v3.977a1.136,1.136,0,0,0,1.136,1.136H49.591a1.136,1.136,0,0,0,1.136-1.136V58.136a1.136,1.136,0,1,1,2.273,0v3.977A3.409,3.409,0,0,1,49.591,65.523Z" transform="translate(0 -12.523)"/>
+                                      <path id="Path_40" data-name="Path 40" class="poly-download-svg" d="M44.906,55.617h0a1.136,1.136,0,0,1-.8-.341l-5.54-5.682a1.136,1.136,0,1,1,1.625-1.585l4.716,4.864,5.011-4.886A1.136,1.136,0,0,1,51.5,49.612l-5.824,5.682A1.136,1.136,0,0,1,44.906,55.617Z" transform="translate(-4.406 -8.475)"/>
+                                      <path id="Path_41" data-name="Path 41" class="poly-download-svg" d="M49.136,47.136A1.136,1.136,0,0,1,48,46V29.136a1.136,1.136,0,0,1,2.273,0V46A1.136,1.136,0,0,1,49.136,47.136Z" transform="translate(-8.636)"/>
+                                    </g>
+                                  </svg>
+                                  
+                            </div>
+                            <p class="poly-p">Download the data sheet</p>
+                        </a>
+                    </div>
+                    <div class="poly-product__images">
+                        <div class="poly-carousel__psx30 poly-carousel swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-x30_1.png" alt="Poly Studio X30 1">
+                                        <!-- <button class="poly-enlarge" onclick="toggleVideoModal()">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16.527" height="16.527" viewBox="0 0 16.527 16.527">
+                                                <g id="Group_130" data-name="Group 130" transform="translate(-5238.675 -6209.08)">
+                                                  <path id="Path_93" data-name="Path 93" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9"/>
+                                                  <path id="Path_94" data-name="Path 94" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9" transform="translate(11464.282 970.405) rotate(90)"/>
+                                                </g>
+                                              </svg>
+                                        </button> -->
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-x30_2.png" alt="Poly Studio X30 2">
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_x30"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="poly-products__product poly-max-width-container">
+                <div class="poly__col-2">
+                    <div class="poly-product__info">
+                        <h4 class="poly-title poly-orange-border-left">Poly Studio</h4>
+                        <p class="poly-product__subheading poly-p">Premium USB video bar</p>
+                        <ul class="poly-product__info-list padding-left">
+                            <li><p>Sound quality like you’ve never heard before</p></li>
+                            <li><p>Video that feels in-person</p></li>
+                            <li><p>A dream for IT to manage and deploy</p></li> 
+                        </ul>
+                        <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/eu_website/poly-studio-ds-en.pdf" target="__blank" class="poly-product__info-download">
+                            <div class="poly-download-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                          
+                                    <g id="icon" transform="translate(-28 -28)">
+                                      <path id="Path_39" data-name="Path 39" class="poly-download-svg" d="M49.591,65.523H31.409A3.409,3.409,0,0,1,28,62.114V58.136a1.136,1.136,0,0,1,2.273,0v3.977a1.136,1.136,0,0,0,1.136,1.136H49.591a1.136,1.136,0,0,0,1.136-1.136V58.136a1.136,1.136,0,1,1,2.273,0v3.977A3.409,3.409,0,0,1,49.591,65.523Z" transform="translate(0 -12.523)"/>
+                                      <path id="Path_40" data-name="Path 40" class="poly-download-svg" d="M44.906,55.617h0a1.136,1.136,0,0,1-.8-.341l-5.54-5.682a1.136,1.136,0,1,1,1.625-1.585l4.716,4.864,5.011-4.886A1.136,1.136,0,0,1,51.5,49.612l-5.824,5.682A1.136,1.136,0,0,1,44.906,55.617Z" transform="translate(-4.406 -8.475)"/>
+                                      <path id="Path_41" data-name="Path 41" class="poly-download-svg" d="M49.136,47.136A1.136,1.136,0,0,1,48,46V29.136a1.136,1.136,0,0,1,2.273,0V46A1.136,1.136,0,0,1,49.136,47.136Z" transform="translate(-8.636)"/>
+                                    </g>
+                                  </svg>
+                                  
+                            </div>
+                            <p class="poly-p">Download the data sheet</p>
+                        </a>
+                    </div>
+                    <div class="poly-product__images">
+                        <div class="poly-carousel__psx30 poly-carousel swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio.png" alt="Poly Studio">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_x30"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="poly-products__product poly-max-width-container">
+                <div class="poly__col-2">
+                    <div class="poly-product__info">
+                        <h4 class="poly-title poly-orange-border-left">POLY STUDIO <span class="poly-text-orange">X50 G2</span></h4>
+                        <p class="poly-product__subheading poly-p">All-in-one video bar for medium rooms</p>
+                        <ul class="poly-product__info-list padding-left">
+                            <li><p>Keep it simple: No computer needed</p></li>
+                            <li><p> Enjoy boardroom-quality audio</p></li>
+                            <li><p>Share content easily, wired or wirelessly</p></li>
+                            <li><p>Also available in a bundle with the TC10 touch display for easy meeting join </p></li> 
+                        </ul>
+                        <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/eu_website/poly-studio-x50-ds-en.pdf" target="__blank" class="poly-product__info-download">
+                            <div class="poly-download-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                          
+                                    <g id="icon" transform="translate(-28 -28)">
+                                      <path id="Path_39" data-name="Path 39" class="poly-download-svg" d="M49.591,65.523H31.409A3.409,3.409,0,0,1,28,62.114V58.136a1.136,1.136,0,0,1,2.273,0v3.977a1.136,1.136,0,0,0,1.136,1.136H49.591a1.136,1.136,0,0,0,1.136-1.136V58.136a1.136,1.136,0,1,1,2.273,0v3.977A3.409,3.409,0,0,1,49.591,65.523Z" transform="translate(0 -12.523)"/>
+                                      <path id="Path_40" data-name="Path 40" class="poly-download-svg" d="M44.906,55.617h0a1.136,1.136,0,0,1-.8-.341l-5.54-5.682a1.136,1.136,0,1,1,1.625-1.585l4.716,4.864,5.011-4.886A1.136,1.136,0,0,1,51.5,49.612l-5.824,5.682A1.136,1.136,0,0,1,44.906,55.617Z" transform="translate(-4.406 -8.475)"/>
+                                      <path id="Path_41" data-name="Path 41" class="poly-download-svg" d="M49.136,47.136A1.136,1.136,0,0,1,48,46V29.136a1.136,1.136,0,0,1,2.273,0V46A1.136,1.136,0,0,1,49.136,47.136Z" transform="translate(-8.636)"/>
+                                    </g>
+                                  </svg>
+                                  
+                            </div>
+                            <p class="poly-p">Download the data sheet</p>
+                        </a>
+                    </div>
+                    <div class="poly-product__images">
+                        <div class="poly-carousel__psx30 poly-carousel swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-x50_1.png" alt="Poly Studio X50 1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-x50_2.png" alt="Poly Studio X50 2">
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_x30"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="poly-products__product poly-max-width-container">
+                <div class="poly__col-2">
+                    <div class="poly-product__info">
+                        <h4 class="poly-title poly-orange-border-left">POLY STUDIO <span class="poly-text-orange">X52</span></h4>
+                        <p class="poly-product__subheading poly-p">All-in-one video bar for mid-sized meeting spaces</p>
+                        <ul class="poly-product__info-list padding-left">
+                            <li><p>20MP 4K UltraHD 95-degree FOV camera</p></li>
+                            <li><p>Poly DirectorAI smart camera technology</p></li>
+                            <li><p>Simple setup and all-in-one design</p></li>
+                            <li><p>Poly NoiseBlockAI and Acoustic Fence technologies</p></li> 
+                        </ul>
+                        <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/eu_website/poly-studio-x52-datasheet-en.pdf" target="__blank" class="poly-product__info-download">
+                            <div class="poly-download-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                          
+                                    <g id="icon" transform="translate(-28 -28)">
+                                      <path id="Path_39" data-name="Path 39" class="poly-download-svg" d="M49.591,65.523H31.409A3.409,3.409,0,0,1,28,62.114V58.136a1.136,1.136,0,0,1,2.273,0v3.977a1.136,1.136,0,0,0,1.136,1.136H49.591a1.136,1.136,0,0,0,1.136-1.136V58.136a1.136,1.136,0,1,1,2.273,0v3.977A3.409,3.409,0,0,1,49.591,65.523Z" transform="translate(0 -12.523)"/>
+                                      <path id="Path_40" data-name="Path 40" class="poly-download-svg" d="M44.906,55.617h0a1.136,1.136,0,0,1-.8-.341l-5.54-5.682a1.136,1.136,0,1,1,1.625-1.585l4.716,4.864,5.011-4.886A1.136,1.136,0,0,1,51.5,49.612l-5.824,5.682A1.136,1.136,0,0,1,44.906,55.617Z" transform="translate(-4.406 -8.475)"/>
+                                      <path id="Path_41" data-name="Path 41" class="poly-download-svg" d="M49.136,47.136A1.136,1.136,0,0,1,48,46V29.136a1.136,1.136,0,0,1,2.273,0V46A1.136,1.136,0,0,1,49.136,47.136Z" transform="translate(-8.636)"/>
+                                    </g>
+                                  </svg>
+                                  
+                            </div>
+                            <p class="poly-p">Download the data sheet</p>
+                        </a>
+                    </div>
+                    <div class="poly-product__images">
+                        <div class="poly-carousel__psx30 poly-carousel swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-x30_1.png" alt="Poly Studio X30 1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-x30_2.png" alt="Poly Studio X30 2">
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_x30"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="poly-products__product poly-max-width-container">
+                <div class="poly__col-2">
+                    <div class="poly-product__info">
+                        <h4 class="poly-title poly-orange-border-left">POLY STUDIO <span class="poly-text-orange">R30</span></h4>
+                        <p class="poly-product__subheading poly-p">USB video bar for small conference spaces</p>
+                        <ul class="poly-product__info-list padding-left">
+                            <li><p>Familiar mode of use for all technology abilities</p></li>
+                            <li><p>Crystal-clear video with a view of the whole room</p></li>
+                            <li><p>Poly DirectorAI smart camera framing technology</p></li>
+                            <li><p>Impeccable noise reduction</p></li> 
+                            <li><p>Quick and effortless setup</p></li> 
+                        </ul>
+                        <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/eu_website/poly-studio-r30-datasheet-en.pdf" target="__blank" class="poly-product__info-download">
+                            <div class="poly-download-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                          
+                                    <g id="icon" transform="translate(-28 -28)">
+                                      <path id="Path_39" data-name="Path 39" class="poly-download-svg" d="M49.591,65.523H31.409A3.409,3.409,0,0,1,28,62.114V58.136a1.136,1.136,0,0,1,2.273,0v3.977a1.136,1.136,0,0,0,1.136,1.136H49.591a1.136,1.136,0,0,0,1.136-1.136V58.136a1.136,1.136,0,1,1,2.273,0v3.977A3.409,3.409,0,0,1,49.591,65.523Z" transform="translate(0 -12.523)"/>
+                                      <path id="Path_40" data-name="Path 40" class="poly-download-svg" d="M44.906,55.617h0a1.136,1.136,0,0,1-.8-.341l-5.54-5.682a1.136,1.136,0,1,1,1.625-1.585l4.716,4.864,5.011-4.886A1.136,1.136,0,0,1,51.5,49.612l-5.824,5.682A1.136,1.136,0,0,1,44.906,55.617Z" transform="translate(-4.406 -8.475)"/>
+                                      <path id="Path_41" data-name="Path 41" class="poly-download-svg" d="M49.136,47.136A1.136,1.136,0,0,1,48,46V29.136a1.136,1.136,0,0,1,2.273,0V46A1.136,1.136,0,0,1,49.136,47.136Z" transform="translate(-8.636)"/>
+                                    </g>
+                                  </svg>
+                                  
+                            </div>
+                            <p class="poly-p">Download the data sheet</p>
+                        </a>
+                    </div>
+                    <div class="poly-product__images">
+                        <div class="poly-carousel__psx30 poly-carousel swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-r30_1.png" alt="Poly R30 1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-r30_2.png" alt="Poly R30 2">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-r30_3.png" alt="Poly R30 3">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-r30_4.png" alt="Poly R30 4">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-r30_5.png" alt="Poly R30 5">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-r30_6.png" alt="Poly R30 6">
+                                    </div>
+                                </div>
+                               
+                               
+                            </div>
+                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_x30"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="poly-products__product poly-max-width-container">
+                <div class="poly__col-2">
+                    <div class="poly-product__info">
+                        <h4 class="poly-title poly-orange-border-left">POLY <span class="poly-text-orange">TC8/TC10</span></h4>
+                        <p class="poly-product__subheading poly-p">Intuitive touch interface for Poly Studio X Family and G7500</p>
+                        <ul class="poly-product__info-list padding-left">
+                            <li><p>Available with an 8” or 10” display.</p></li>
+                            <li><p>Feel confidently in control of every meeting</p></li>
+                            <li><p>Pair with the video solutions you know</p></li>
+                        </ul>
+                        <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/eu_website/poly-tc10-ds-en.pdf" target="__blank" class="poly-product__info-download">
+                            <div class="poly-download-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                          
+                                    <g id="icon" transform="translate(-28 -28)">
+                                      <path id="Path_39" data-name="Path 39" class="poly-download-svg" d="M49.591,65.523H31.409A3.409,3.409,0,0,1,28,62.114V58.136a1.136,1.136,0,0,1,2.273,0v3.977a1.136,1.136,0,0,0,1.136,1.136H49.591a1.136,1.136,0,0,0,1.136-1.136V58.136a1.136,1.136,0,1,1,2.273,0v3.977A3.409,3.409,0,0,1,49.591,65.523Z" transform="translate(0 -12.523)"/>
+                                      <path id="Path_40" data-name="Path 40" class="poly-download-svg" d="M44.906,55.617h0a1.136,1.136,0,0,1-.8-.341l-5.54-5.682a1.136,1.136,0,1,1,1.625-1.585l4.716,4.864,5.011-4.886A1.136,1.136,0,0,1,51.5,49.612l-5.824,5.682A1.136,1.136,0,0,1,44.906,55.617Z" transform="translate(-4.406 -8.475)"/>
+                                      <path id="Path_41" data-name="Path 41" class="poly-download-svg" d="M49.136,47.136A1.136,1.136,0,0,1,48,46V29.136a1.136,1.136,0,0,1,2.273,0V46A1.136,1.136,0,0,1,49.136,47.136Z" transform="translate(-8.636)"/>
+                                    </g>
+                                  </svg>
+                                  
+                            </div>
+                            <p class="poly-p">Download the data sheet</p>
+                        </a>
+                    </div>
+                    <div class="poly-product__images">
+                        <div class="poly-carousel__psx30 poly-carousel swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-tc8_1.png" alt="Poly TC8 1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-tc8_2.png" alt="Poly TC8 2">
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_x30"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script >
+            const carouselPSX30 = new Swiper('.poly-carousel__psx30', {
+
+                scrollbar: {
+                    el: ".poly-carousel__scrollbar_x30",
+                    draggable: true
+                },
+            });
+        </script>
+
+        <section class="poly-section bg-grey">
+            <div class="poly-background-circle top-right"></div>
+            <div class="poly-section__intro poly-max-width-container">
+                <h4 class="poly-title poly-orange-border-left">Poly Studio <span class="poly-text-orange">P</span></h4>
+                <p class="poly-p">Poly Studio P Series personal video devices enable you to be your best self — confident and clear from beginning to end. Make the most of video calls from wherever work happens. High-performance cameras compensate for lighting imbalances. Premium audio eliminates distractions. Solutions and bundles are designed to match work styles for any type of user and include simple setup and cloud services for IT.</p>
+            </div>
+            <div class="poly-max-width-container">
+            <div class="poly__col-2 poly poly-product__col-margin-top">
+                <div class="poly-product__col ">
+                    <h4 class="poly-title poly-orange-border-left">Poly Studio <span class="poly-text-orange">P5</span></h4>
+                    <div class="poly-product__images">
+                        <div class="poly-carousel__p5 poly-carousel swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-p5_1.png" alt="Poly Studio X30" style="width: auto; height:300px;">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-p5_2.png" alt="Poly Studio P5">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-p5_3.png" alt="Poly Studio P5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_p5"></div>
+                        </div>
+                    </div>
+                    <p class="poly-product__subheading poly-p">Professional webcam</p>
+                    <ul class="poly-product__info-list padding-left">
+                        <li><p>Exceptional camera optics and automatic low-light compensation</p></li>
+                        <li><p>Hear and be heard wherever you work</p></li>
+                        <li><p>You can take it with you: <br/>small, rugged and portable</p></li> 
+                    </ul>
+                    <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/eu_website/studio-p5-data-sheet-en.pdf" target="__blank" class="poly-product__info-download">
+                        <div class="poly-download-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                      
+                                <g id="icon" transform="translate(-28 -28)">
+                                  <path id="Path_39" data-name="Path 39" class="poly-download-svg" d="M49.591,65.523H31.409A3.409,3.409,0,0,1,28,62.114V58.136a1.136,1.136,0,0,1,2.273,0v3.977a1.136,1.136,0,0,0,1.136,1.136H49.591a1.136,1.136,0,0,0,1.136-1.136V58.136a1.136,1.136,0,1,1,2.273,0v3.977A3.409,3.409,0,0,1,49.591,65.523Z" transform="translate(0 -12.523)"/>
+                                  <path id="Path_40" data-name="Path 40" class="poly-download-svg" d="M44.906,55.617h0a1.136,1.136,0,0,1-.8-.341l-5.54-5.682a1.136,1.136,0,1,1,1.625-1.585l4.716,4.864,5.011-4.886A1.136,1.136,0,0,1,51.5,49.612l-5.824,5.682A1.136,1.136,0,0,1,44.906,55.617Z" transform="translate(-4.406 -8.475)"/>
+                                  <path id="Path_41" data-name="Path 41" class="poly-download-svg" d="M49.136,47.136A1.136,1.136,0,0,1,48,46V29.136a1.136,1.136,0,0,1,2.273,0V46A1.136,1.136,0,0,1,49.136,47.136Z" transform="translate(-8.636)"/>
+                                </g>
+                              </svg>
+                              
+                        </div>
+                        <p class="poly-p">Download the data sheet</p>
+                    </a>
+                </div>
+                <div class="poly-product__col">
+                    <h4 class="poly-title poly-orange-border-left">Poly Studio <span class="poly-text-orange">P15</span></h4>
+                    <div class="poly-product__images">
+                        <div class="poly-carousel__p5 poly-carousel swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-p15_1.png"  style="width: auto; height:306px;" alt="Poly Studio P15">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-p15_2.png" alt="Poly Studio P15">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_p5"></div>
+                        </div>
+                    </div>
+                    <p class="poly-product__subheading poly-p">P15 personal video bar</p>
+                    <ul class="poly-product__info-list padding-left">
+                        <li><p>Look and sound your best on video calls in one sleek device</p></li>
+                        <li><p>Show up and stand out with exceptional optics and powerful audio</p></li>
+                        <li><p>Automatic camera framing lets you move with confidence</p></li> 
+                        <li><p>Up and running in seconds with easy set up</p></li>
+                    </ul>
+                    <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/eu_website/studio-p15-data-sheet-en.pdf" target="__blank" class="poly-product__info-download">
+                        <div class="poly-download-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                      
+                                <g id="icon" transform="translate(-28 -28)">
+                                  <path id="Path_39" data-name="Path 39" class="poly-download-svg" d="M49.591,65.523H31.409A3.409,3.409,0,0,1,28,62.114V58.136a1.136,1.136,0,0,1,2.273,0v3.977a1.136,1.136,0,0,0,1.136,1.136H49.591a1.136,1.136,0,0,0,1.136-1.136V58.136a1.136,1.136,0,1,1,2.273,0v3.977A3.409,3.409,0,0,1,49.591,65.523Z" transform="translate(0 -12.523)"/>
+                                  <path id="Path_40" data-name="Path 40" class="poly-download-svg" d="M44.906,55.617h0a1.136,1.136,0,0,1-.8-.341l-5.54-5.682a1.136,1.136,0,1,1,1.625-1.585l4.716,4.864,5.011-4.886A1.136,1.136,0,0,1,51.5,49.612l-5.824,5.682A1.136,1.136,0,0,1,44.906,55.617Z" transform="translate(-4.406 -8.475)"/>
+                                  <path id="Path_41" data-name="Path 41" class="poly-download-svg" d="M49.136,47.136A1.136,1.136,0,0,1,48,46V29.136a1.136,1.136,0,0,1,2.273,0V46A1.136,1.136,0,0,1,49.136,47.136Z" transform="translate(-8.636)"/>
+                                </g>
+                              </svg>
+                              
+                        </div>
+                        <p class="poly-p">Download the data sheet</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        
+        <script >
+            const carouselP5 = new Swiper('.poly-carousel__p5', {
+
+                scrollbar: {
+                    el: ".poly-carousel__scrollbar_p5",
+                    draggable: true
+                },
+            });
+        </script>
+
+   
+
+        <section class="poly-section bg-blue" id="bettertogether">
+        
+            <div class="poly-section__intro poly-max-width-container">
+                <h4 class="poly-title poly-orange-border-left">#Bettertogether <br/><span class="poly-text-orange">Poly + HP</span></h4>
+                <p class="poly-p poly-text-white">Hybrid work environments are complex. But the union of HP and Poly will simplify things with a complete ecosystem of communication, collaboration, productivity, security, and management solutions designed to be easy to provision, manage, and support.</p>
+          
+          
+            <h4 class="poly-title poly-orange-border-left">This gives you</h4>
+            <div class="poly__col-2 poly-ol-col">
+                <ol class="poly-ordered-list">
+                    <li><p class="poly-p">Offering your customers hybrid work solutions from one source helps you to better meet their needs while increasing your buying power and reducing your costs.</p></li>
+                    <li><p class="poly-p">Access to Poly and HP’s audio and video innovations allows you to create the most engaging and productive collaboration experiences for your customers.</p></li>
+                    <li><p class="poly-p">Deep integration with leading hybrid work platform providers ensures you can offer your customers worry-free interoperability and great user experiences.</p></li>
+                </ol>
+                <ol class="poly-ordered-list">
+                    <li><p class="poly-p">Comprehensive management and security features simplify deployment, troubleshooting and protection.</p></li>
+                    <li><p class="poly-p">A globally available services portfolio delivers expert help with all aspects of a hybridwork environment. </p></li>
+                    <li><p class="poly-p">Dedication to sustainability, climate change, human rights and digital equity means you can offer smart solutions and protect the planet.</p></li>
+                </pl>
+            </div>
+            </div>
+        </section>
+
+        <section class="poly-section">
+            <div class="poly-background-circle top-right"></div>
+            <div class="poly-section__intro poly-max-width-container">
+                <h4 class="poly-title poly-orange-border-left"><span class="poly-text-orange">Add licensing</span> with TD SYNNEX</h4>
+                <p class="poly-p ">Our Maverick collaboration experts will ensure that you have all the elements you need to create a room solution that enables rapid connection to VC meetings, integration with calendars and room booking systems, alongside your Poly products. </p>
+                <p class="poly-p margin-top">Ask us about which licence you’ll need to enable your meeting rooms:</p>
+                <div class="poly-section__logos">
+                    <div class="poly-section_logo"><img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-zoom-logo-2.png " alt="Zoom logo"></div>
+                    <div class="poly-section_logo"><img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-teams-logo-2.png" alt="Microsoft Teams"></div>
+                    <div class="poly-section_logo"><img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-chrome-logo-2.png " alt="Works with chrome"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="poly-section bg-lighter-grey" id="licensing">
+            <div class="poly-background-circle bottom"></div>
+            <div class="poly-section__intro poly-max-width-container">
+                <h4 class="poly-title poly-orange-border-left">Add personal audio with </br><span class="poly-text-orange">TD SYNNEX</span></h4>
+                <p class="poly-p">POLY’S market leading portfolio of headphones are also available from TD SYNNEX, enabling you to add personal audio to your eco-system for the full collaboration experience. With decades of experience these market leading products offer incredible audio quality, noise cancelling and comfort for the wearer, working at home or in the office.</p>
+            </div>
+            <div class="poly__col-2 poly-max-width-container poly-product__col-margin-top">
+                <div class="poly-product__col " style="display:flex; flex-direction:column;height: 950px">
+                    <h4 class="poly-title poly-orange-border-left">Voyager Bluetooth <br/><span class="poly-text-orange">Headsets + Headphones</span></h4>
+                    <div class="poly-product__images" style="height:400px; margin-bottom:0;">
+                        <div class="poly-carousel__p5 poly-carousel swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/voyager.png" alt="Voyager">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_p5"></div>
+                        </div>
+                    </div>
+              
+                    <ul class="poly-product__info-list padding-left">
+                        <li><p>Talk, listen and move about wirelessly</p></li>
+                        <li><p>Enjoy Poly’s legendary sound quality</p></li>
+                        <li><p>Comfortable & stylish enough for hours of wear</p></li> 
+                    </ul>
+                    <p class="poly-p margin-top poly-smaller-p">See the full <strong>Voyager Range</strong> available from TD SYNNEX <a href="" class="poly-text-orange">HERE.</a></p>
+
+                    <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/eu_website/voyager-family-comparison-guide-en.pdf" target="__blank" class="poly-product__info-download"  style="margin-top: auto;">
+                        <div class="poly-download-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                      
+                                <g id="icon" transform="translate(-28 -28)">
+                                  <path id="Path_39" data-name="Path 39" class="poly-download-svg" d="M49.591,65.523H31.409A3.409,3.409,0,0,1,28,62.114V58.136a1.136,1.136,0,0,1,2.273,0v3.977a1.136,1.136,0,0,0,1.136,1.136H49.591a1.136,1.136,0,0,0,1.136-1.136V58.136a1.136,1.136,0,1,1,2.273,0v3.977A3.409,3.409,0,0,1,49.591,65.523Z" transform="translate(0 -12.523)"/>
+                                  <path id="Path_40" data-name="Path 40" class="poly-download-svg" d="M44.906,55.617h0a1.136,1.136,0,0,1-.8-.341l-5.54-5.682a1.136,1.136,0,1,1,1.625-1.585l4.716,4.864,5.011-4.886A1.136,1.136,0,0,1,51.5,49.612l-5.824,5.682A1.136,1.136,0,0,1,44.906,55.617Z" transform="translate(-4.406 -8.475)"/>
+                                  <path id="Path_41" data-name="Path 41" class="poly-download-svg" d="M49.136,47.136A1.136,1.136,0,0,1,48,46V29.136a1.136,1.136,0,0,1,2.273,0V46A1.136,1.136,0,0,1,49.136,47.136Z" transform="translate(-8.636)"/>
+                                </g>
+                              </svg>
+                        </div>
+                        <p class="poly-p">Download the data sheet</p>
+                    </a>
+                   
+                </div>
+                <div class="poly-product__col" style="display:flex; flex-direction:column;height: 950px;">
+                    <h4 class="poly-title poly-orange-border-left">Blackwire </br><span class="poly-text-orange">USB Headsets</span></h4>
+                    <div class="poly-product__images"  style="height:400px; margin-bottom:0;">
+                        <div class="poly-carousel__p5 poly-carousel swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="poly-product__image">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/blackwire.png" alt="Blackwire">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_p5"></div>
+                        </div>
+                    </div>
+                    <ul class="poly-product__info-list padding-left">
+                        <li><p>Easy to use</p></li>
+                        <li><p>Outstanding sound</p></li>
+                        <li><p> Comfortable design</p></li> 
+                        <li><p>Simple and effortless deployment</p></li>
+                    </ul>
+                    <!-- <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/eu_website/poly-studio-x30-ds-en.pdf" target="__blank" class="poly-product__info-download"  style="margin-top: auto;">
+                        <div class="poly-download-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                      
+                                <g id="icon" transform="translate(-28 -28)">
+                                  <path id="Path_39" data-name="Path 39" class="poly-download-svg" d="M49.591,65.523H31.409A3.409,3.409,0,0,1,28,62.114V58.136a1.136,1.136,0,0,1,2.273,0v3.977a1.136,1.136,0,0,0,1.136,1.136H49.591a1.136,1.136,0,0,0,1.136-1.136V58.136a1.136,1.136,0,1,1,2.273,0v3.977A3.409,3.409,0,0,1,49.591,65.523Z" transform="translate(0 -12.523)"/>
+                                  <path id="Path_40" data-name="Path 40" class="poly-download-svg" d="M44.906,55.617h0a1.136,1.136,0,0,1-.8-.341l-5.54-5.682a1.136,1.136,0,1,1,1.625-1.585l4.716,4.864,5.011-4.886A1.136,1.136,0,0,1,51.5,49.612l-5.824,5.682A1.136,1.136,0,0,1,44.906,55.617Z" transform="translate(-4.406 -8.475)"/>
+                                  <path id="Path_41" data-name="Path 41" class="poly-download-svg" d="M49.136,47.136A1.136,1.136,0,0,1,48,46V29.136a1.136,1.136,0,0,1,2.273,0V46A1.136,1.136,0,0,1,49.136,47.136Z" transform="translate(-8.636)"/>
+                                </g>
+                              </svg>
+                              
+                        </div>
+                        <p class="poly-p" >Download the data sheet</p>
+                    </a> -->
+                    <p class="poly-p margin-top poly-smaller-p" >See the full <strong>Blackwire Range</strong> TD SYNNEX <a href="" class="poly-text-orange">HERE.</a></p>
+                </div>
+            </div>
+        </section>
+
+        
+        <script >
+            const carouselAudio = new Swiper('.poly-carousel__p5', {
+
+                scrollbar: {
+                    el: ".poly-carousel__scrollbar_p5",
+                    draggable: true
+                },
+            });
+        </script>
+
+
+
+        <footer class="poly-footer bg-black">
+            <div></div>
+            <div class="poly-max-width-container poly-flex-col poly-orange-border-left poly-orange-border-right">
+            <h4 class="poly-title poly-text-white poly-text-center">Connecting Digital Experiences</h1>
+                    <div class="poly-footer__socials">
+                        <a href="https://twitter.com/polycompany" target="__blank" rel='no-referrer' class="poly-footer__social-link"><img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-twitter-logo.png " alt="Twitter logo"></a>
+                        <a href="https://www.linkedin.com/company/polycompany"  target="__blank" rel='no-referrer' class="poly-footer__social-link"><img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-linkedin-logo.png " alt="Linkedin logo"></a>
+                        <a href="https://www.instagram.com/polycompany/"  target="__blank" rel='no-referrer' class="poly-footer__social-link"><img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-instagram-logo.png " alt="Instagram logo"></a>
+                </div>
+            <div class="poly-footer__links">
+                <a href="https://www.poly.com/gb/en/legal/web-accessibility" target="__blank" rel='no-referrer'><p class="poly-p">Accessibility Statement</p></a>
+                <a href="https://www.hp.com/gb-en/privacy/privacy-central.html?_gl=1*v0o9x9*_gcl_au*MTcxMjUwNzc4OC4xNjk5MDAyNjAw" target="__blank" rel='no-referrer'><p class="poly-p">Privacy Statement</p></a>
+                <a href="https://www.weareplaster.com/" target="__blank" rel='no-referrer' class="poly-plaster-link"><p class="poly-p">Website designed & developed by <span class="underline">Plaster</span></p></a>
+            </div>
+        </div>
+       
+        </footer>
+        <div class="poly-footer-bottom"></div>
+    
+</body>
+</html>
