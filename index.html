@@ -1,4 +1,3 @@
-
 <html>
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -6,10 +5,10 @@
         <link rel="stylesheet" href="https://use.typekit.net/kim3yej.css">
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 
-        <!-- Core styles for GLide -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-        <!-- Extra styles for GLide -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+        <!-- Swiper styles for carousel -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <!-- Swiper script for carousel -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" integrity="sha384-mbndEeczUTv40KT7wVvOFrDC17W+D1ihfZnKgwtP6PVluZo6BxTgfiJNwG6OWelh" crossorigin="anonymous"></script>
 
         <!-- Futura PT font  -->
         <link rel="stylesheet" href="https://use.typekit.net/eym1ggi.css">
@@ -22,16 +21,6 @@
 <!-- GIT This script is importing the global styles -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Plaster-Creative-Communications/maverick-intouch@main/style_16_02-23.css">
 <!-- End of global style scripts  -->
-
-<!-- Swiper styles for carousel -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-
-<!-- Swiper script for carousel -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
 
 </head>
 <body>
@@ -91,6 +80,8 @@
 
     img {
         width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     .bg-lighter-grey {
@@ -116,6 +107,9 @@
     }
     .poly-text-orange {
         color: var(--orange)!important;
+    }
+    .poly-hide {
+        display: none!important;
     }
     .poly-main-container {
             max-width: 100%!important;
@@ -243,6 +237,7 @@
 
         .poly-product__col .poly-product__images {
                 margin-bottom: 80px;
+                max-width: 515px;
         }
      /*     HEADER     */
 
@@ -279,10 +274,14 @@
         list-style-type: none;
         border-right: 1px var(--orange) solid;
     }
+    .poly-header_nav ul li:last-of-type {
+        border-right: none;
+    }
+
     
 
     .poly-header_nav ul li a {
-        color: var(--white);
+        color: var(--white)!important;
         font-size: 16px;
         font-weight: 300;
         text-transform: uppercase;
@@ -412,11 +411,13 @@
        display: flex;
        align-items: center;
        justify-content: center;
-       height: 100%;
+       height: 306px;
     }
     .poly-product__image img {
         max-width: 50%!important;
         margin-inline: auto;
+        width: 100%!important;
+        height: 100%!important;
     }
     .poly-carousel {
         position: relative;
@@ -588,68 +589,6 @@
         width: 600px;
         height: 600px;
      }
-
-     .poly-modal {
-        position: fixed;
-        top:0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(0,33,69,0.9);
-        z-index: 999;
-        display: none;
-        align-items: center;
-        justify-content: center ;
-     }
-     .poly-modal.show {
-        display: flex;
-     }
-     .poly-modal__image-wrapper {
-        width: fit-content;
-        max-width: 600px;
-        display: flex;
-        align-items: center;
-        justify-content: center ;
-     }
-     .poly-modal-close {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background-color: var(--white);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: none;
-        outline:none;
-        position: absolute;
-        top: 100px;
-        left: 50%;
-        transform: translateY(-60%);
-     }
-     .poly-exit-cross {
-                          fill: none;
-                          stroke: #ff3900;
-                          stroke-linecap: round;
-                          stroke-width: 2px;
-                        }
-    .poly-enlarge {
-        background-color: #ff3900;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: none;
-        outline: none;
-    }
-    .poly-enlarge  .poly-exit-cross {
-                          fill: none;
-                          stroke: var(--white);
-                          stroke-linecap: round;
-                          stroke-width: 2px;
-                          transform: rotate(180deg);
-                        }
     .poly-ts-and-cs {
         padding-block: 50px!important;
                         }
@@ -665,23 +604,105 @@
     .poly-ts-and-cs  .heading {
         font-size: 20px!important;
     }
-    .poly-ts-and-cs ul {
 
+    .poly-modal {
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,33,69,0.9);
+        z-index: 999;
+        display: none;
+        align-items: center;
+        justify-content: center ;
+     
+     }
+     .poly-modal.show {
+        display: flex!important;
+        z-index: 9999!important;
+        opacity: 1!important;
+     }
+     .poly-modal__image-wrapper {
+        width: fit-content;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        max-height: 60vh;
+        height: 100%;
+     }
+     .poly-modal__image-wrapper img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+     .poly-modal-close {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        outline:none;
+        position: absolute;
+        top: 50px;
+     }
+     .poly-exit-cross {
+                          fill: none;
+                          stroke: #ff3900;
+                          stroke-linecap: round;
+                          stroke-width: 2px;
+                        }
+    .poly-enlarge {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: var(--orange);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        outline:none;
+        position: absolute;
+        top: 0;
+        right:0;
+        z-index: 99;
     }
+    .poly-enlarge svg {
+        transform: rotate(45deg);
+    }
+    .poly-enlarge .poly-exit-cross {
+                          fill: none;
+                          stroke: white;
+                          stroke-linecap: round;
+                          stroke-width: 2px;
+                        }
+
+                        .poly-left-align {
+                            padding-left:0;
+                            margin-left: 0;
+                        }
 </style>
 
 
 <script>
+          var head = document.getElementsByTagName("head")[0];
 
-    const toggleVideoModal = () => {
-        document.querySelector('#poly-image-modal').classList.toggle('show');
-    }
+            const swiperScript = `<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" integrity="sha384-mbndEeczUTv40KT7wVvOFrDC17W+D1ihfZnKgwtP6PVluZo6BxTgfiJNwG6OWelh" crossorigin="anonymous"/>`;
 
+            head.insertBefore(swiperScript, head.firstChild);
 </script>
+    <script>
 
+      
+
+    </script>
     <main class="poly-main-container main-container">
 
-        <!-- <div class="poly-modal show" id="poly-image-modal">
+        <div class="poly-modal" id="poly-image-modal">
             <button class="poly-modal-close" onclick="toggleVideoModal()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16.527" height="16.527" viewBox="0 0 16.527 16.527">
                     <g id="Group_130" data-name="Group 130" transform="translate(-5238.675 -6209.08)">
@@ -691,9 +712,9 @@
                   </svg>
             </button>
             <div class="poly-modal__image-wrapper">
-                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-x30_1.png" alt="Image enlarged">
+                <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-x30_1.png" alt="Image enlarged" id="poly-enlarge-img">
             </div> 
-        </div> -->
+        </div>
 
         <div class="poly-header bg-blue">
             <div class="poly-max-width-container poly-flex-row">
@@ -757,32 +778,30 @@
                         <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/eu_website/poly-studio-x30-ds-en.pdf" target="__blank" class="poly-product__info-download">
                             <div class="poly-download-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
-                          
                                     <g id="icon" transform="translate(-28 -28)">
                                       <path id="Path_39" data-name="Path 39" class="poly-download-svg" d="M49.591,65.523H31.409A3.409,3.409,0,0,1,28,62.114V58.136a1.136,1.136,0,0,1,2.273,0v3.977a1.136,1.136,0,0,0,1.136,1.136H49.591a1.136,1.136,0,0,0,1.136-1.136V58.136a1.136,1.136,0,1,1,2.273,0v3.977A3.409,3.409,0,0,1,49.591,65.523Z" transform="translate(0 -12.523)"/>
                                       <path id="Path_40" data-name="Path 40" class="poly-download-svg" d="M44.906,55.617h0a1.136,1.136,0,0,1-.8-.341l-5.54-5.682a1.136,1.136,0,1,1,1.625-1.585l4.716,4.864,5.011-4.886A1.136,1.136,0,0,1,51.5,49.612l-5.824,5.682A1.136,1.136,0,0,1,44.906,55.617Z" transform="translate(-4.406 -8.475)"/>
                                       <path id="Path_41" data-name="Path 41" class="poly-download-svg" d="M49.136,47.136A1.136,1.136,0,0,1,48,46V29.136a1.136,1.136,0,0,1,2.273,0V46A1.136,1.136,0,0,1,49.136,47.136Z" transform="translate(-8.636)"/>
                                     </g>
                                   </svg>
-                                  
                             </div>
                             <p class="poly-p">Download the data sheet</p>
                         </a>
                     </div>
                     <div class="poly-product__images">
-                        <div class="poly-carousel__psx30 poly-carousel swiper">
+                        <div class="poly-product-image-carousel poly-carousel swiper">
+                            <button class="poly-enlarge" onclick="toggleVideoModal(event ,'https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-x30_1.png')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.527" height="16.527" viewBox="0 0 16.527 16.527">
+                                    <g id="poly-enlarge-svg" data-name="Group 130" transform="translate(-5238.675 -6209.08)">
+                                      <path id="Path_93" data-name="Path 93" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9"/>
+                                      <path id="Path_94" data-name="Path 94" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9" transform="translate(11464.282 970.405) rotate(90)"/>
+                                    </g>
+                                  </svg>
+                            </button>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="poly-product__image">
                                         <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-x30_1.png" alt="Poly Studio X30 1">
-                                        <!-- <button class="poly-enlarge" onclick="toggleVideoModal()">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16.527" height="16.527" viewBox="0 0 16.527 16.527">
-                                                <g id="Group_130" data-name="Group 130" transform="translate(-5238.675 -6209.08)">
-                                                  <path id="Path_93" data-name="Path 93" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9"/>
-                                                  <path id="Path_94" data-name="Path 94" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9" transform="translate(11464.282 970.405) rotate(90)"/>
-                                                </g>
-                                              </svg>
-                                        </button> -->
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -792,7 +811,7 @@
                                 </div>
                                
                             </div>
-                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_x30"></div>
+                            <div class="poly-carousel__scrollbar "></div>
                         </div>
                     </div>
                 </div>
@@ -823,7 +842,15 @@
                         </a>
                     </div>
                     <div class="poly-product__images">
-                        <div class="poly-carousel__psx30 poly-carousel swiper">
+                        <div class="poly-product-image-carousel poly-carousel swiper">
+                            <button class="poly-enlarge" onclick="toggleVideoModal(event, 'https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio.png')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.527" height="16.527" viewBox="0 0 16.527 16.527">
+                                    <g id="poly-enlarge-svg" data-name="Group 130" transform="translate(-5238.675 -6209.08)">
+                                      <path id="Path_93" data-name="Path 93" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9"/>
+                                      <path id="Path_94" data-name="Path 94" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9" transform="translate(11464.282 970.405) rotate(90)"/>
+                                    </g>
+                                  </svg>
+                            </button>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="poly-product__image">
@@ -831,7 +858,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_x30"></div>
+                            <div class="poly-carousel__scrollbar "></div>
                         </div>
                     </div>
                 </div>
@@ -863,7 +890,15 @@
                         </a>
                     </div>
                     <div class="poly-product__images">
-                        <div class="poly-carousel__psx30 poly-carousel swiper">
+                        <div class="poly-product-image-carousel poly-carousel swiper">
+                            <button class="poly-enlarge" onclick="toggleVideoModal(event,'https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-x50_1.png')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.527" height="16.527" viewBox="0 0 16.527 16.527">
+                                    <g id="poly-enlarge-svg" data-name="Group 130" transform="translate(-5238.675 -6209.08)">
+                                      <path id="Path_93" data-name="Path 93" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9"/>
+                                      <path id="Path_94" data-name="Path 94" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9" transform="translate(11464.282 970.405) rotate(90)"/>
+                                    </g>
+                                  </svg>
+                            </button>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="poly-product__image">
@@ -877,7 +912,7 @@
                                 </div>
                                
                             </div>
-                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_x30"></div>
+                            <div class="poly-carousel__scrollbar "></div>
                         </div>
                     </div>
                 </div>
@@ -909,21 +944,25 @@
                         </a>
                     </div>
                     <div class="poly-product__images">
-                        <div class="poly-carousel__psx30 poly-carousel swiper">
+                        <div class="poly-product-image-carousel poly-carousel swiper">
+                            <button class="poly-enlarge" onclick="toggleVideoModal(event, 'https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-x30_1.png')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.527" height="16.527" viewBox="0 0 16.527 16.527">
+                                    <g id="poly-enlarge-svg" data-name="Group 130" transform="translate(-5238.675 -6209.08)">
+                                      <path id="Path_93" data-name="Path 93" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9"/>
+                                      <path id="Path_94" data-name="Path 94" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9" transform="translate(11464.282 970.405) rotate(90)"/>
+                                    </g>
+                                  </svg>
+                            </button>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="poly-product__image">
-                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-x30_1.png" alt="Poly Studio X30 1">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/studio-x52.png" alt="Poly Studio X52 1">
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="poly-product__image">
-                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-x30_2.png" alt="Poly Studio X30 2">
-                                    </div>
-                                </div>
+
                                
                             </div>
-                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_x30"></div>
+                            <div class="poly-carousel__scrollbar "></div>
                         </div>
                     </div>
                 </div>
@@ -956,7 +995,15 @@
                         </a>
                     </div>
                     <div class="poly-product__images">
-                        <div class="poly-carousel__psx30 poly-carousel swiper">
+                        <div class="poly-product-image-carousel poly-carousel swiper">
+                            <button class="poly-enlarge" onclick="toggleVideoModal(event,'https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-r30_1.png')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.527" height="16.527" viewBox="0 0 16.527 16.527">
+                                    <g id="poly-enlarge-svg" data-name="Group 130" transform="translate(-5238.675 -6209.08)">
+                                      <path id="Path_93" data-name="Path 93" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9"/>
+                                      <path id="Path_94" data-name="Path 94" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9" transform="translate(11464.282 970.405) rotate(90)"/>
+                                    </g>
+                                  </svg>
+                            </button>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="poly-product__image">
@@ -991,7 +1038,7 @@
                                
                                
                             </div>
-                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_x30"></div>
+                            <div class="poly-carousel__scrollbar "></div>
                         </div>
                     </div>
                 </div>
@@ -1022,7 +1069,15 @@
                         </a>
                     </div>
                     <div class="poly-product__images">
-                        <div class="poly-carousel__psx30 poly-carousel swiper">
+                        <div class="poly-product-image-carousel poly-carousel swiper">
+                            <button class="poly-enlarge" onclick="toggleVideoModal(event, 'https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-tc8_1.png')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.527" height="16.527" viewBox="0 0 16.527 16.527">
+                                    <g id="poly-enlarge-svg" data-name="Group 130" transform="translate(-5238.675 -6209.08)">
+                                      <path id="Path_93" data-name="Path 93" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9"/>
+                                      <path id="Path_94" data-name="Path 94" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9" transform="translate(11464.282 970.405) rotate(90)"/>
+                                    </g>
+                                  </svg>
+                            </button>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="poly-product__image">
@@ -1036,22 +1091,14 @@
                                 </div>
                                
                             </div>
-                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_x30"></div>
+                            <div class="poly-carousel__scrollbar "></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <script >
-            const carouselPSX30 = new Swiper('.poly-carousel__psx30', {
-
-                scrollbar: {
-                    el: ".poly-carousel__scrollbar_x30",
-                    draggable: true
-                },
-            });
-        </script>
+      
 
         <section class="poly-section bg-grey">
             <div class="poly-background-circle top-right"></div>
@@ -1064,11 +1111,19 @@
                 <div class="poly-product__col ">
                     <h4 class="poly-title poly-orange-border-left">Poly Studio <span class="poly-text-orange">P5</span></h4>
                     <div class="poly-product__images">
-                        <div class="poly-carousel__p5 poly-carousel swiper">
+                        <div class="poly-product-image-carousel poly-carousel swiper">
+                            <button class="poly-enlarge" onclick="toggleVideoModal(event,'https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-p5_1.png')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.527" height="16.527" viewBox="0 0 16.527 16.527">
+                                    <g id="poly-enlarge-svg" data-name="Group 130" transform="translate(-5238.675 -6209.08)">
+                                      <path id="Path_93" data-name="Path 93" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9"/>
+                                      <path id="Path_94" data-name="Path 94" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9" transform="translate(11464.282 970.405) rotate(90)"/>
+                                    </g>
+                                  </svg>
+                            </button>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="poly-product__image">
-                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-p5_1.png" alt="Poly Studio X30" style="width: auto; height:300px;">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-p5_1.png" alt="Poly Studio X30" style="width: auto;">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -1082,7 +1137,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_p5"></div>
+                            <div class="poly-carousel__scrollbar "></div>
                         </div>
                     </div>
                     <p class="poly-product__subheading poly-p">Professional webcam</p>
@@ -1109,11 +1164,19 @@
                 <div class="poly-product__col">
                     <h4 class="poly-title poly-orange-border-left">Poly Studio <span class="poly-text-orange">P15</span></h4>
                     <div class="poly-product__images">
-                        <div class="poly-carousel__p5 poly-carousel swiper">
+                        <div class="poly-product-image-carousel poly-carousel swiper">
+                            <button class="poly-enlarge" onclick="toggleVideoModal(event,'https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-p15_1.png')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.527" height="16.527" viewBox="0 0 16.527 16.527">
+                                    <g id="poly-enlarge-svg" data-name="Group 130" transform="translate(-5238.675 -6209.08)">
+                                      <path id="Path_93" data-name="Path 93" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9"/>
+                                      <path id="Path_94" data-name="Path 94" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9" transform="translate(11464.282 970.405) rotate(90)"/>
+                                    </g>
+                                  </svg>
+                            </button>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="poly-product__image">
-                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-p15_1.png"  style="width: auto; height:306px;" alt="Poly Studio P15">
+                                        <img src="https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/poly-studio-p15_1.png"  alt="Poly Studio P15">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -1122,7 +1185,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_p5"></div>
+                            <div class="poly-carousel__scrollbar "></div>
                         </div>
                     </div>
                     <p class="poly-product__subheading poly-p">P15 personal video bar</p>
@@ -1152,15 +1215,7 @@
         </section>
 
         
-        <script >
-            const carouselP5 = new Swiper('.poly-carousel__p5', {
-
-                scrollbar: {
-                    el: ".poly-carousel__scrollbar_p5",
-                    draggable: true
-                },
-            });
-        </script>
+        
 
    
 
@@ -1211,7 +1266,15 @@
                 <div class="poly-product__col " style="display:flex; flex-direction:column;height: 950px">
                     <h4 class="poly-title poly-orange-border-left">Voyager Bluetooth <br/><span class="poly-text-orange">Headsets + Headphones</span></h4>
                     <div class="poly-product__images" style="height:400px; margin-bottom:0;">
-                        <div class="poly-carousel__p5 poly-carousel swiper">
+                        <div class="poly-product-image-carousel poly-carousel swiper">
+                            <button class="poly-enlarge" onclick="toggleVideoModal(event,'https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/voyager.png')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.527" height="16.527" viewBox="0 0 16.527 16.527">
+                                    <g id="poly-enlarge-svg" data-name="Group 130" transform="translate(-5238.675 -6209.08)">
+                                      <path id="Path_93" data-name="Path 93" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9"/>
+                                      <path id="Path_94" data-name="Path 94" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9" transform="translate(11464.282 970.405) rotate(90)"/>
+                                    </g>
+                                  </svg>
+                            </button>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="poly-product__image">
@@ -1219,7 +1282,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_p5"></div>
+                            <div class="poly-carousel__scrollbar "></div>
                         </div>
                     </div>
               
@@ -1228,9 +1291,9 @@
                         <li><p>Enjoy Poly’s legendary sound quality</p></li>
                         <li><p>Comfortable & stylish enough for hours of wear</p></li> 
                     </ul>
-                    <p class="poly-p margin-top poly-smaller-p">See the full <strong>Voyager Range</strong> available from TD SYNNEX <a href="" class="poly-text-orange">HERE.</a></p>
+                    <p class="poly-p margin-top poly-smaller-p poly-left-align">See the full <strong>Voyager Range</strong> available from TD SYNNEX <a href="" class="poly-text-orange">HERE.</a></p>
 
-                    <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/eu_website/voyager-family-comparison-guide-en.pdf" target="__blank" class="poly-product__info-download"  style="margin-top: auto;">
+                    <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/eu_website/voyager-family-comparison-guide-en.pdf" target="__blank" class="poly-product__info-download"  >
                         <div class="poly-download-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
                       
@@ -1248,7 +1311,15 @@
                 <div class="poly-product__col" style="display:flex; flex-direction:column;height: 950px;">
                     <h4 class="poly-title poly-orange-border-left">Blackwire </br><span class="poly-text-orange">USB Headsets</span></h4>
                     <div class="poly-product__images"  style="height:400px; margin-bottom:0;">
-                        <div class="poly-carousel__p5 poly-carousel swiper">
+                        <div class="poly-product-image-carousel poly-carousel swiper">
+                            <button class="poly-enlarge" onclick="toggleVideoModal(event,'https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/blackwire.png')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.527" height="16.527" viewBox="0 0 16.527 16.527">
+                                    <g id="poly-enlarge-svg" data-name="Group 130" transform="translate(-5238.675 -6209.08)">
+                                      <path id="Path_93" data-name="Path 93" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9"/>
+                                      <path id="Path_94" data-name="Path 94" class="poly-exit-cross" d="M5239.382,6209.787,5254.5,6224.9" transform="translate(11464.282 970.405) rotate(90)"/>
+                                    </g>
+                                  </svg>
+                            </button>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="poly-product__image">
@@ -1256,7 +1327,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="poly-carousel__scrollbar poly-carousel__scrollbar_p5"></div>
+                            <div class="poly-carousel__scrollbar "></div>
                         </div>
                     </div>
                     <ul class="poly-product__info-list padding-left">
@@ -1265,38 +1336,17 @@
                         <li><p> Comfortable design</p></li> 
                         <li><p>Simple and effortless deployment</p></li>
                     </ul>
-                    <!-- <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/eu_website/poly-studio-x30-ds-en.pdf" target="__blank" class="poly-product__info-download"  style="margin-top: auto;">
-                        <div class="poly-download-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
-                      
-                                <g id="icon" transform="translate(-28 -28)">
-                                  <path id="Path_39" data-name="Path 39" class="poly-download-svg" d="M49.591,65.523H31.409A3.409,3.409,0,0,1,28,62.114V58.136a1.136,1.136,0,0,1,2.273,0v3.977a1.136,1.136,0,0,0,1.136,1.136H49.591a1.136,1.136,0,0,0,1.136-1.136V58.136a1.136,1.136,0,1,1,2.273,0v3.977A3.409,3.409,0,0,1,49.591,65.523Z" transform="translate(0 -12.523)"/>
-                                  <path id="Path_40" data-name="Path 40" class="poly-download-svg" d="M44.906,55.617h0a1.136,1.136,0,0,1-.8-.341l-5.54-5.682a1.136,1.136,0,1,1,1.625-1.585l4.716,4.864,5.011-4.886A1.136,1.136,0,0,1,51.5,49.612l-5.824,5.682A1.136,1.136,0,0,1,44.906,55.617Z" transform="translate(-4.406 -8.475)"/>
-                                  <path id="Path_41" data-name="Path 41" class="poly-download-svg" d="M49.136,47.136A1.136,1.136,0,0,1,48,46V29.136a1.136,1.136,0,0,1,2.273,0V46A1.136,1.136,0,0,1,49.136,47.136Z" transform="translate(-8.636)"/>
-                                </g>
-                              </svg>
-                              
-                        </div>
-                        <p class="poly-p" >Download the data sheet</p>
-                    </a> -->
-                    <p class="poly-p margin-top poly-smaller-p" >See the full <strong>Blackwire Range</strong> TD SYNNEX <a href="" class="poly-text-orange">HERE.</a></p>
+                    
+                    <p class="poly-p margin-top poly-smaller-p poly-left-align" >See the full <strong>Blackwire Range</strong> TD SYNNEX <a href="" class="poly-text-orange">HERE.</a></p>
                 </div>
             </div>
         </section>
 
         
-        <script >
-            const carouselAudio = new Swiper('.poly-carousel__p5', {
-
-                scrollbar: {
-                    el: ".poly-carousel__scrollbar_p5",
-                    draggable: true
-                },
-            });
-        </script>
+       
 
 
-            <section class="poly-section poly-ts-and-cs bg-lighter-grey">
+            <section class="poly-section poly-ts-and-cs ">
                 <div class="poly-max-width-container">
                     <p class="poly-p heading">The first 50 orders from launch day of the Poly and TD SYNNEX partnership will be entered to win an all expenses paid trip to Integrated Systems Europe.</p>
                     <p class="poly-p heading">Terms and conditions to the competition as follows:</p>
@@ -1333,6 +1383,63 @@
         </footer>
         <div class="poly-footer-bottom"></div>
         
+        <script>
+
+            let swiperCarousel;
+                if (typeof Swiper !== 'undefined') {
+             
+                     swiperCarousel = new Swiper('.poly-product-image-carousel', {
+        
+                        scrollbar: {
+                            el: ".poly-carousel__scrollbar",
+                            draggable: true
+                        },
+                    });
+
+                } else {
+                   const allCarouselScrollbars = [...document.querySelectorAll('.poly-carousel__scrollbar')];
+
+                    allCarouselScrollbars.forEach(scrollbar => scrollbar.classList.add('poly-hide'))      
+
+                } 
+                            
+
+                
+          const toggleVideoModal = (e,img_url) => {
+                
+                document.querySelector('#poly-image-modal').classList.toggle('show');
+        
+                if(img_url) {
+                    document.querySelector('#poly-enlarge-img').src = img_url;
+                }
+                if (typeof Swiper === 'undefined' && img_url) {
+                    document.querySelector('#poly-enlarge-img').src = img_url;
+                } else if(typeof Swiper !== 'undefined' && e) {
+
+                    const parentSwiper = e.target.closest(".swiper")
+                    
+                    const allSwiperDivs = [...document.querySelectorAll('.swiper')]
+                    let swiperIndex = 0;
+                    
+                    allSwiperDivs.forEach((elm, index) => {
+                        if(elm === parentSwiper) {
+                            swiperIndex = index;
+                        }
+                   });
+        
+                    const activeSlide = swiperCarousel[swiperIndex].activeIndex;
+
+                    const activeImgSrc = parentSwiper.querySelectorAll('img')[activeSlide].src;
+
+                    const modalImg = document.querySelector('#poly-enlarge-img');
+
+                    modalImg.src = activeImgSrc;
+                    
+                }
+           
+            }
+        </script> 
+        </main>
 
 </body>
 </html>
